@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Travel Explorer - AR/VR Tourism</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  
+  <style>
+    .assistant-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #2563eb;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      z-index: 50;
+    }
+    .assistant-float img {
+      width: 36px;
+      height: 36px;
+    }
+    
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <nav class="bg-white shadow p-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-blue-600">VIRTU YATRA</h1>
+    <div class="space-x-4 text-sm font-medium">
+      <a href="index.html" class="text-blue-600 underline">Home</a>
+      <a href="vr.html" class="hover:text-blue-500">VR View</a>
+      <a href="booking.html" class="hover:text-blue-500">Booking</a>
+      <a href="trips.html" class="hover:text-blue-500">Trips</a>
+    </div>
+  </nav>
+
+  <header class="bg-blue-100 text-center py-16 px-4">
+    
+    <h2 class="text-4xl font-extrabold mb-4">Experience the World in Virtual Reality</h2>
+    <p class="text-lg max-w-xl mx-auto mb-6">Travel to iconic destinations, get personalized help, and book everything—all from one platform.</p>
+    <a href="vr.html" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition">Explore in VR</a>
+  </header>
+
+  <main class="max-w-6xl mx-auto py-10 px-4 grid md:grid-cols-3 gap-6">
+    <a href="vr.html" class="bg-white rounded shadow hover:shadow-lg p-6 text-center transition">
+      <img src="vr logo.png" alt="VR Tour" class="w-16 h-16 mx-auto mb-4">
+      <h3 class="text-lg font-bold">360° VR Tours</h3>
+      <p class="text-sm text-gray-600">Walk through temples, mountains, and cities as if you're really there.</p>
+    </a>
+    <a href="booking.html" class="bg-white rounded shadow hover:shadow-lg p-6 text-center transition">
+      <img src="booking lg.png" alt="Booking" class="w-16 h-16 mx-auto mb-4">
+      <h3 class="text-lg font-bold">Booking Center</h3>
+      <p class="text-sm text-gray-600">Reserve hotels, flights, and full experiences all in one place.</p>
+    </a>
+    <a href="trips.html" class="bg-white rounded shadow hover:shadow-lg p-6 text-center transition">
+      <img src="trips logo.png" alt="Trips" class="w-16 h-16 mx-auto mb-4">
+      <h3 class="text-lg font-bold">Your Trips</h3>
+      <p class="text-sm text-gray-600">Review past and upcoming journeys at a glance.</p>
+    </a>
+  </main>
+
+  <section class="bg-white py-10 text-center">
+    <h3 class="text-xl font-semibold mb-4">Plan with Ease</h3>
+    <p class="text-gray-600 mb-6">Ask our AI Assistant anything about your travel plans, available 24/7.</p>
+    <a href="assistant.html" class="text-blue-600 hover:underline font-medium">Talk to the Assistant →</a>
+  </section>
+
+  <footer class="bg-gray-200 text-center py-4 text-sm text-gray-600">
+    &copy; 2025 Travel Explorer. All rights reserved.
+  </footer>
+
+  <a href="assistant.html" class="assistant-float" title="AI Assistant">
+    <img src="https://cdn-icons-png.flaticon.com/512/4712/4712102.png" alt="Assistant Icon" />
+  </a>
+</body>
+</html>

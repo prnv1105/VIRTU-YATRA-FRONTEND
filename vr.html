@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VR View - Travel Explorer</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <nav class="bg-white shadow-md p-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold">VIRTU YATRA</h1>
+    <div class="space-x-4">
+      <a href="index.html" class="text-blue-600 hover:underline">Home</a>
+      <a href="vr.html" class="text-blue-600 hover:underline font-semibold">VR View</a>
+      <a href="assistant.html" class="text-blue-600 hover:underline">AI Assistant</a>
+      <a href="booking.html" class="text-blue-600 hover:underline">Booking</a>
+      <a href="trips.html" class="text-blue-600 hover:underline">Trips</a>
+    </div>
+  </nav>
+
+  <main class="max-w-5xl mx-auto p-6">
+    <h2 class="text-2xl font-bold mb-4">360° Virtual Experience</h2>
+    <p class="mb-4">Immerse yourself in iconic destinations using our AR/VR view. Use your mouse or finger to look around!</p>
+
+    <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
+      <a-scene embedded>
+        <a-assets>
+          <img id="panorama" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg">
+        </a-assets>
+        <a-sky src="#panorama" rotation="0 -130 0"></a-sky>
+      </a-scene>
+    </div>
+  </main>
+</body>
+</html>
